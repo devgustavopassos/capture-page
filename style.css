@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+  font-family: "DM Sans", sans-serif;
+}
+
+:root {
+  /* --main-text-white: #f5eded;
+  --main-text-blue: #2f89fc;
+  --main-text-second: #22d1ee;
+  --main-bg-color: #0a102b;
+  --main-bg2-color: #f5eded; */
+
+  --main-text-white: #f5eded;
+  --main-text-blue: #116adf;
+  /* --main-text-second: #22d1ee; */
+  --main-bg-color: #0a102b;
+  --main-bg2-color: #d9dad7;
+}
+body {
+  height: 100vh;
+  background: var(--main-bg-color);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 130px;
+}
+
+/* firstTittle  */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  color: var(--main-text-white);
+  margin: 120px auto 75px;
+}
+.firstTittle {
+  color: var(--main-text-white) 1;
+  font-size: 70px;
+  line-height: 44px;
+}
+
+.firstTittle span {
+  color: var(--main-text-blue);
+}
+
+.secondeHeaderText {
+  font-size: 25px;
+  font-weight: 200;
+  line-height: 55px;
+}
+
+.secondeHeaderText span {
+  color: var(--main-text-blue);
+}
+
+/* secondText */
+
+.headerMail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.productInfo {
+  font-size: 20px;
+  color: var(--main-text-white);
+  text-align: start;
+  align-items: center;
+  line-height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.productInfoSpan {
+  font-weight: 900;
+  color: var(--main-text-blue);
+}
+
+.productInfoBold {
+  font-weight: 900;
+}
+
+.formMail {
+  display: flex;
+  justify-content: center;
+}
+
+.formStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* margin-right: 80px; */
+}
+
+.formStyle p {
+  color: var(--main-text-blue);
+  font-size: 20px;
+  font-weight: 900;
+}
+.formStyle input {
+  height: 40px;
+  width: 500px;
+  background-color: var(--main-text-white);
+  border-radius: 10px;
+  border: none;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mailButton {
+  background-color: var(--main-text-blue);
+  color: var(--main-text-white);
+  font-family: "DM Sans", sans-serif;
+  height: 45px;
+  width: 500px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.mailButton:hover {
+  border: 2px solid var(--main-bg2-color);
+}
+
+.line {
+  height: 1px;
+  width: auto;
+  background-color: var(--main-text-blue);
+  margin: 10px 70px 70px;
+}
+
+/* infos */
+
+.infos {
+  height: 100vh;
+  background-color: var(--main-bg2-color);
+}
+
+.infosParagrafo {
+  font-family: "DM Sans", sans-serif;
+  text-align: center;
+  padding-top: 80px;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--main-bg-color);
+}
+
+.infosParagrafo span {
+  color: var(--main-text-blue);
+}
+
+.gridInfos {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 450px);
+  margin-top: 80px;
+  justify-items: center;
+  justify-content: center;
+}
+ion-icon {
+  font-size: 64px;
+  color: var(--main-text-blue);
+}
+.aboutProduct {
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  line-height: 30px;
+  align-items: center;
+}
+
+.aboutProduct h1 {
+  margin-bottom: 15px;
+}
+
+.aboutProduct p {
+  font-size: 20px;
+}
+.lineInfos {
+  height: 1.4px;
+  background-color: var(--main-text-blue);
+  margin-top: 20px;
+}
