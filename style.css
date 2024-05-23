@@ -241,7 +241,7 @@ ion-icon {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: end;
+  justify-content: center;
 }
 
 .socials span {
@@ -260,4 +260,12 @@ ion-icon {
   margin: 15px;
   font-size: 45px;
   color: var(--main-text-white);
+}
+
+.mailLast p {
+  color: var(--main-text-white);
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 20px;
 }
