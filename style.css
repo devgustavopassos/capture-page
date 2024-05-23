@@ -191,3 +191,73 @@ ion-icon {
   background-color: var(--main-text-blue);
   margin-top: 20px;
 }
+
+/* About me */
+
+.aboutme {
+  background-color: var(--main-bg-color);
+  height: 100vh;
+}
+
+.sobremim {
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lineLast {
+  height: 1px;
+  width: 100%;
+  background-color: var(--main-text-white);
+  margin: 10px 0 30px;
+  align-items: center;
+}
+
+.mailButton {
+  margin-bottom: 40px;
+}
+.textaboutme {
+  color: var(--main-text-white);
+  width: 600px;
+}
+
+.textaboutme h1 {
+  color: var(--main-text-blue);
+  font-weight: 800;
+  padding-bottom: 17px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.textaboutme p {
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 40px;
+}
+
+.socials {
+  color: var(--main-text-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.socials span {
+  color: var(--main-text-blue);
+}
+
+.socialLinks {
+  margin-top: 10px;
+}
+
+.socialLinks a {
+  text-decoration: none;
+}
+
+.socialLinks ion-icon {
+  margin: 15px;
+  font-size: 45px;
+  color: var(--main-text-white);
+}
