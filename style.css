@@ -31,16 +31,20 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--main-text-white);
-  margin: 120px auto 75px;
-}
-.firstTittle {
-  color: var(--main-text-white) 1;
-  font-size: 70px;
-  line-height: 44px;
+  margin: 120px auto 0;
+  position: relative;
 }
 
-.firstTittle span {
-  color: var(--main-text-blue);
+.title img {
+  width: 650px;
+  position: relative;
+}
+
+.secondeHeaderText p {
+  position: relative;
+  bottom: 70px;
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .secondeHeaderText {
@@ -332,9 +336,24 @@ ion-icon {
   }
 }
 
+@media (max-width: 650px) {
+  .title img {
+    width: 550px;
+  }
+  .secondeHeaderText p {
+    bottom: 55px;
+  }
+}
+
 @media (max-width: 585px) {
   .socials h1 {
     text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .title img {
+    width: 450px;
   }
 }
 
@@ -352,6 +371,13 @@ ion-icon {
 
   .formStyle input {
     width: 80vw;
+  }
+  .title img {
+    width: 350px;
+  }
+
+  .secondeHeaderText p {
+    bottom: 50px;
   }
 }
 
@@ -391,10 +417,17 @@ ion-icon {
   }
 }
 
-@media (max-width: 320px) {
-  .firstTittle {
-    font-size: 60px;
+@media (max-width: 375px) {
+  .title img {
+    width: 250px;
   }
+  .secondeHeaderText p {
+    bottom: 40px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
   .socialLinks {
     ion-icon {
       font-size: 25px;
