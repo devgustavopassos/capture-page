@@ -407,6 +407,13 @@ ion-icon {
   }
 }
 
+@media (max-width: 390px) {
+  .socialLinks {
+    ion-icon {
+      font-size: 28px;
+    }
+  }
+}
 @media (max-width: 375px) {
   .socialLinks {
     ion-icon {
@@ -421,11 +428,33 @@ ion-icon {
     font-size: 18px;
   }
 }
+@media (max-width: 438px) {
+  .socialLinks {
+    ion-icon {
+      font-size: 22px;
+    }
+  }
+}
 
+@media (max-width: 363px) {
+  .socialLinks {
+    ion-icon {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 354px) {
+  .socialLinks {
+    ion-icon {
+      font-size: 19px;
+    }
+  }
+}
 @media (max-width: 320px) {
   .socialLinks {
     ion-icon {
-      font-size: 25px;
+      font-size: 18px;
     }
   }
   .socialLinks {
