@@ -6,15 +6,8 @@
 }
 
 :root {
-  /* --main-text-white: #f5eded;
-  --main-text-blue: #2f89fc;
-  --main-text-second: #22d1ee;
-  --main-bg-color: #0a102b;
-  --main-bg2-color: #f5eded; */
-
   --main-text-white: #f5eded;
   --main-text-blue: #116adf;
-  /* --main-text-second: #22d1ee; */
   --main-bg-color: #0a102b;
   --main-bg2-color: #d9dad7;
 }
@@ -116,16 +109,24 @@ body {
   text-align: center;
 }
 
+.labelForm {
+  width: 100%;
+}
+.labelForm button {
+  width: 100%;
+}
+
 .mailButton {
   background-color: var(--main-text-blue);
   color: var(--main-text-white);
   font-family: "DM Sans", sans-serif;
-  height: 45px;
-  width: 500px;
+  height: 50px;
+  width: 100%;
   border-radius: 50px;
   border: none;
   font-size: 15px;
   font-weight: 900;
+  transition: 0.6s;
 }
 
 .mailButton:hover {
@@ -142,7 +143,7 @@ body {
 /* infos */
 
 .infos {
-  height: 100vh;
+  width: auto;
   background-color: var(--main-bg2-color);
 }
 
@@ -160,13 +161,18 @@ body {
 }
 
 .gridInfos {
-  display: grid;
-  width: 100%;
-  grid-template-columns: repeat(3, 450px);
-  margin-top: 80px;
-  justify-items: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding: 50px 0 100px;
 }
+.gridInfos > div {
+  flex: 1 1 300px;
+  margin: 30px;
+}
+
 ion-icon {
   font-size: 64px;
   color: var(--main-text-blue);
@@ -196,13 +202,19 @@ ion-icon {
 
 .aboutme {
   background-color: var(--main-bg-color);
-  height: 100vh;
+  padding: 90px;
+  flex-wrap: wrap;
 }
 
 .sobremim {
   margin-top: 110px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
   justify-content: space-around;
+  margin: 50px;
+  align-items: center;
+  justify-items: center;
 }
 
 .lineLast {
@@ -218,7 +230,7 @@ ion-icon {
 }
 .textaboutme {
   color: var(--main-text-white);
-  width: 600px;
+  width: 100%;
 }
 
 .textaboutme h1 {
@@ -242,6 +254,7 @@ ion-icon {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 70%;
 }
 
 .socials span {
@@ -262,10 +275,133 @@ ion-icon {
   color: var(--main-text-white);
 }
 
+.mailLast {
+  width: 100%;
+}
 .mailLast p {
   color: var(--main-text-white);
   font-size: 20px;
   font-weight: 900;
   text-align: center;
   margin-bottom: 20px;
+}
+
+/* footer */
+
+.footer {
+  width: auto;
+  background-color: var(--main-bg2-color);
+  flex-wrap: wrap;
+}
+
+.footer p {
+  color: var(--main-bg-color);
+  padding: 25px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* responsive */
+
+@media (max-width: 1270px) {
+  .productInfo {
+    margin-bottom: 50px;
+  }
+
+  .sobremim {
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  .socials {
+    width: 68%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .productInfo {
+    width: 80vw;
+    text-align: center;
+  }
+}
+
+@media (max-width: 585px) {
+  .socials h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 525px) {
+  .socialLinks {
+    ion-icon {
+      font-size: 25px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .formStyle {
+    width: 80vw;
+  }
+
+  .formStyle input {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 425px) {
+  .aboutme {
+    padding: 10px;
+  }
+  .productInfo {
+    width: 90vw;
+    text-align: center;
+  }
+
+  .formStyle {
+    width: 90vw;
+  }
+
+  .formStyle input {
+    width: 90vw;
+  }
+
+  .socials h1 {
+    text-align: center;
+  }
+
+  .socialLinks {
+    ion-icon {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .socialLinks {
+    ion-icon {
+      font-size: 23px;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .firstTittle {
+    font-size: 60px;
+  }
+  .socialLinks {
+    ion-icon {
+      font-size: 25px;
+    }
+  }
+  .socialLinks {
+    width: 70vw;
+    text-align: center;
+  }
 }
