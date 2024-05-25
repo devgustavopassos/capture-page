@@ -30,7 +30,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto idealizado para a captura de clientes via e-mail..[]
+Projeto idealizado para a captura de clientes via e-mail. Utilizando apenas HTML e CSS, projeto totalmente responsivo.
 
 - [Acesse o projeto finalizado, online](https://devgustavopassos.github.io/capture-page/)
 
